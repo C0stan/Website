@@ -12,5 +12,9 @@ body {
 }
 
 .video-title {
-  width: 300px;
+  width: 250px;
+}
+
+.video-block {
+  display: inline-block;
 }
