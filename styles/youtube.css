@@ -13,12 +13,21 @@ body {
   display: block;
 }
 
-.video-title {
+/* .video-title {
   width: 250px;
-}
+} */
 
 .video-block {
+  width: 300px;
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
+}
+
+.channel-pictures {
+  display: inline-block;
+}
+
+.video-info {
+  display: inline-block;
 }
