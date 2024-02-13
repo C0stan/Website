@@ -9,10 +9,7 @@ body {
 }
 
 .thumbnail {
-  width: 300px;
-  height: 200px;
-  display: block;
-  object-fit: cover;
+  width: 100%;
 }
 
 .search-bar {
@@ -25,13 +22,6 @@ body {
   font-weight: 500;
   line-height: 20p x;
   margin-bottom: 12px;
-}
-
-.video-preview {
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
 }
 
 /* .channel-pictures {
@@ -64,4 +54,9 @@ body {
 
 .video-author {
   margin-bottom: 4px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
