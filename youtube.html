@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- <meta charset="UTF-8"> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/generalYoutube.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
   <title>YouTube</title>
 </head>
 
 <body>
+  <!-- header -->
   <div class="header">
     <div class="left-section">
       <img class="hamburger-menu" src="icons/hamburger-menu.svg">
@@ -35,19 +36,18 @@
       </button>
     </div>
     <div class="right-section">
-      <img
-      class="upload-icon" 
-      src="icons/upload.svg">
-      <img
-      class="youtube-apps-icon"
-      src="icons/youtube-apps.svg">
-      <img
-      class="notifications-icon" 
-      src="icons/notifications.svg">
-      <img
-      class="current-user-picture" 
-      src="icons/io.jpg">
+      <img class="upload-icon" src="icons/upload.svg">
+      <img class="youtube-apps-icon"src="icons/youtube-apps.svg">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-count">3</div>
+      </div>
+      <img class="current-user-picture" src="icons/io.jpg">
     </div>
+  </div>
+  <!-- sidebar -->
+  <div class="sidebar">
+    sidebar
   </div>
   <!-- the grid -->
   <div class="video-grid">
@@ -56,9 +56,14 @@
       <div class="thumbnail-row">
         <!-- <img class="thumbnail" src="images/okok.jpeg"> -->
         <!-- autoplay muted <- in case of emergency-->
-        <video class="thumbnail"
-          src="videos/TUTTO Python in 60 MINUTI - Corso Completo PROGRAMMAZIONE FACILE partendo da zero.mp4" controls
-          type="video/mp4">Il tuo browser non supporta il video</video>
+        <video 
+          class="thumbnail"
+          src="videos/TUTTO Python in 60 MINUTI - Corso Completo PROGRAMMAZIONE FACILE partendo da zero.mp4" 
+          controls
+          type="video/mp4">
+          Il tuo browser non supporta il video
+        </video>
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -78,6 +83,7 @@
         type="video/mp4">
           Il tuo browser non supporta il video
         </video>
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -92,6 +98,7 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="images/okok.jpeg">
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -106,6 +113,7 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="images/okok.jpeg">
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -120,6 +128,7 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="images/okok.jpeg">
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -134,6 +143,7 @@
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="images/okok.jpeg">
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
         <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
@@ -149,4 +159,4 @@
 
 </html>
 
-<!-- ripartire dal minuto 4:19:00 -->
+<!-- ripartire dal minuto 5:33:49 16. Finish the Project -->

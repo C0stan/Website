@@ -1,5 +1,14 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 body {
   background-color: rgba(216, 216, 216, 0.836);
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
 }
 
 .thumbnail {
@@ -26,6 +35,7 @@ body {
 
 .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
 }
 
 .video-author,
@@ -43,4 +53,20 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  border-radius: 2px;
 }
