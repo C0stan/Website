@@ -1,18 +1,21 @@
 p {
-  font-family: Roboto, Arial;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 body {
-  background-color: rgba(216, 216, 216, 0.836);
+  background-color: rgb(202, 202, 202);
   margin: 0;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  margin-bottom: 3000px;
+  font-family: Roboto, Arial;
 }
 
 .thumbnail {
   width: 100%;
+  height: 150px
 }
 
 .video-title {
@@ -20,7 +23,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 20p x;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid {
@@ -29,12 +32,12 @@ body {
 }
 
 .profile-picture {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -55,14 +58,29 @@ body {
   row-gap: 40px;
 }
 
+/* screen size measurement */
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 751px) and  (min-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;  /* <-- shortcut for apply padding to all four direction (same for marign) */
   background-color: black;
   color: white;
   position: absolute;
@@ -70,3 +88,7 @@ body {
   right: 5px;
   border-radius: 2px;
 }
+
+/* .video-preview {
+  height: 50px;
+} */

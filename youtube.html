@@ -17,7 +17,7 @@
 
 <body>
   <!-- header -->
-  <div class="header">
+  <header class="header">
     <div class="left-section">
       <img class="hamburger-menu" src="icons/hamburger-menu.svg">
       <img class="youtube-logo" src="icons/youtube-logo.svg">
@@ -25,138 +25,167 @@
     <div class="middle-section">
       <input class="search-bar" type="text" placeholder="Search">
       <button class="search-button">
-        <img 
-        class="search-icon"
-        src="icons/search.svg">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
       </button>
       <button class="voice-search-button">
         <img 
         src="icons/voice-search-icon.svg"
         class="voice-search-icon">
+        <div class="tooltip">Search with your voice</div>
       </button>
     </div>
     <div class="right-section">
-      <img class="upload-icon" src="icons/upload.svg">
-      <img class="youtube-apps-icon"src="icons/youtube-apps.svg">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+       <img class="youtube-apps-icon"src="icons/youtube-apps.svg">
       <div class="notifications-icon-container">
         <img class="notifications-icon" src="icons/notifications.svg">
         <div class="notifications-count">3</div>
       </div>
       <img class="current-user-picture" src="icons/io.jpg">
     </div>
-  </div>
+  </header>
   <!-- sidebar -->
-  <div class="sidebar">
-    sidebar
-  </div>
-  <!-- the grid -->
-  <div class="video-grid">
-    <!-- primo div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <!-- <img class="thumbnail" src="images/okok.jpeg"> -->
-        <!-- autoplay muted <- in case of emergency-->
-        <video 
-          class="thumbnail"
-          src="videos/TUTTO Python in 60 MINUTI - Corso Completo PROGRAMMAZIONE FACILE partendo da zero.mp4" 
-          controls
-          type="video/mp4">
-          Il tuo browser non supporta il video
-        </video>
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+  <main>
+    <!-- the grid -->
+    <section class="video-grid">
+      <!-- primo div (thumbnail)-->
+      <div class="video-preview"> <!-- <-- questa classe non è definita -->
+        <div class="thumbnail-row">
+          <!-- <img class="thumbnail" src="images/okok.jpeg"> -->
+          <!-- autoplay muted <- in case of emergency-->
+          <video 
+            class="thumbnail"
+            src="videos/TUTTO Python in 60 MINUTI - Corso Completo PROGRAMMAZIONE FACILE partendo da zero.mp4" 
+            controls
+            type="video/mp4">
+            Il tuo browser non supporta il video
+          </video>
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- secondo div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <video class="thumbnail"
-        src="videos/WhatsApp Video 2021-10-01 at 14.05.23.mp4"
-        controls
-        type="video/mp4">
-          Il tuo browser non supporta il video
-        </video>
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <!-- secondo div (thumbnail)-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <video 
+            class="thumbnail"
+            src="videos/WhatsApp Video 2021-10-01 at 14.05.23.mp4"
+            controls
+            type="video/mp4">
+            Il tuo browser non supporta il video
+          </video>
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- terzo div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="images/okok.jpeg">
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <!-- terzo div (thumbnail)-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="images/okok.jpeg">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- quarto div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="images/okok.jpeg">
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <!-- quarto div (thumbnail)-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="images/okok.jpeg">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- quinto div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="images/okok.jpeg">
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <!-- quinto div (thumbnail)-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="images/okok.jpeg">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- sesto div (thumbnail)-->
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="images/okok.jpeg">
-        <div class="video-time">14:20</div>
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
-        <div class="video-info">
-          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <!-- sesto div (thumbnail)-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="images/okok.jpeg">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pictures"><img class="profile-picture" src="images/unnamed.jpg"></div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </body>
 
 </html>
 
-<!-- ripartire dal minuto 5:33:49 16. Finish the Project -->
+<!-- ripartire dal minuto  -->

@@ -1,8 +1,32 @@
 .sidebar {
-  background-color: rgba(216, 216, 216, 0.836);
+  background-color: rgb(216, 216, 216);
   position: fixed;
   left: 0;
   bottom: 0;
   top: 55px;
   width: 72px;
+  z-index: 2;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(201, 199, 199);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
 }
