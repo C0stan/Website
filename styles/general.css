@@ -15,7 +15,7 @@ body {
 
 .thumbnail {
   height: 150px;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -90,6 +90,6 @@ body {
   border-radius: 2px;
 }
 
-/* .video-preview {
-  height: 50px;
-} */
+.video-preview {
+  
+}
